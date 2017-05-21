@@ -9,6 +9,7 @@ The project for create file,write string and save in the file, in the HD and USB
 
 
 Numbers in hexadecimal
+
 SIMULADOR  emu8086  [for 16 bits]
 
 
