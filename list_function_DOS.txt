@@ -1,0 +1,122 @@
+ http://www.ousob.com
+[^^Up^^] [Menu] [About The Guide]
+
+ 00h (0)                 Terminate Program
+ 01h (1)                 Read Keyboard Character and Echo
+ 02h (2)                 Character Output
+ 03h (3)                 Auxiliary Character Input
+ 04h (4)                 Auxiliary Character Output
+ 05h (5)                 Printer Character Output
+ 06h (6)                 Direct Console Character I/O
+ 07h (7)                 Direct Console Character Input without Echo
+ 08h (8)                 Console Character Input without Echo
+ 09h (9)                 Print String
+ 0Ah (10)                Buffered Input
+ 0Bh (11)                Check Standard Input Status
+ 0Ch (12)                Clear Input Buffer, then Invoke Function
+ 0Dh (13)                Disk Reset
+ 0Eh (14)                Select Default Drive
+ 0Fh (15)                Open File, Using FCBs
+ 10h (16)                Close File, Using FCBs
+ 11h (17)                Search for First Matching File, Using FCBs
+ 12h (18)                Search for Next Matching File, Using FCBs
+ 13h (19)                Delete File, Using FCBs
+ 14h (20)                Sequential Read, Using FCBs
+ 15h (21)                Sequential Write, Using FCBs
+ 16h (22)                Create File, using FCBs
+ 17h (23)                Rename File, using FCBs
+ 18h (24)                Reserved
+ 19h (25)                Get Current Disk
+ 1Ah (26)                Set Disk Transfer Address (DTA)
+ 1Bh (27)                Get FAT Information for Current Drive
+ 1Ch (27)                Get FAT Information for Specified Drive
+ 1Dh (29)                Reserved
+ 1Eh (30)                Reserved
+ 1Fh (31)                Reserved
+ 20h (32)                Reserved
+ 21h (33)                Random Read, Using FCBs
+ 22h (34)                Random Write, Using FCBs
+ 23h (35)                Get File Size, Using FCBs
+ 24h (36)                Set Random-Record Field, Using FCBs
+ 25h (37)                Set Interrupt Vector
+ 26h (38)                Create Program Segment
+ 27h (39)                Random Block Read, Using FCBs
+ 28h (40)                Random Block Write, Using FCBs
+ 29h (41)                Parse Filename
+ 2Ah (42)                Get System Date
+ 2Bh (43)                Set System Date
+ 2Ch (44)                Get System Time
+ 2Dh (45)                Set System Time
+ 2Eh (46)                Set or Reset VERIFY Switch
+ 2Fh (47)                Get Disk Transfer Address (DTA)
+ 30h (48)                Get DOS Version Number
+ 31h (49)                Terminate and Stay Resident
+ 32h (50)                Reserved
+ 33h (51)                Get or Set Ctrl-Break Status
+ 34h (52)                Reserved
+ 35h (53)                Get Interrupt Vector
+ 36h (54)                Get Disk Free Space
+ 37h (55)                Reserved
+ 38h (56)                Get or Set Country-Dependent Information
+ 39h (57)                Create Directory (MKDIR)
+ 3Ah (58)                Remove Directory (RMDIR)
+ 3Bh (59)                Change Directory (CHDIR)
+ 3Ch (60)                Create a File (CREAT)
+ 3Dh (61)                Open a File
+ 3Eh (62)                Close a File Handle
+ 3Fh (63)                Read from File or Device, Using a Handle
+ 40h (64)                Write to File or Device, Using a Handle
+ 41h (65)                Delete File (UNLINK)
+ 42h (66)                Move File Pointer (LSEEK)
+ 43h (67)                Get or Set File Attributes (CHMOD)
+ 44h (68)                I/O Control for Devices (IOCTL)             Overview
+ 4400h (68-0)            IOCTL: Get Device Information
+ 4401h (68-1)            IOCTL: Set Device Information
+ 4402h (68-2)            IOCTL: Read from Character Device
+ 4403h (68-3)            IOCTL: Write to Character Device
+ 4404h (68-4)            IOCTL: Read from Block Device
+ 4405h (68-5)            IOCTL: Write to Block Device
+ 4406h (68-6)            IOCTL: Get Input Status
+ 4407h (68-7)            IOCTL: Get Output Status
+ 4408h (68-8)            IOCTL: Is Device Removable?                . DOS 3.0
+ 4409h (68-9)            IOCTL: Is Logical Device Remote?           . DOS 3.1
+ 440Ah (68-10)           IOCTL: Is Handle Remote?                   . DOS 3.1
+ 440Bh (68-11)           IOCTL: Change Sharing Retry Count          . DOS 3.0
+ 440Dh (68-13)           IOCTL: Generic IOCTL Request               . DOS 3.2
+ 440Eh (68-14)           IOCTL: Get Logical Drive                   . DOS 3.2
+ 440Fh (68-15)           IOCTL: Set Logical Drive                   . DOS 3.2
+ 45h (69)                Duplicate a File Handle (DUP)
+ 46h (70)                Force Handle Duplication (FORCDUP)
+ 47h (71)                Get Current Directory
+ 48h (72)                Allocate Memory
+ 49h (73)                Free Allocated Memory
+ 4Ah (74)                Modify Memory Allocation (SETBLOCK)
+ 4Bh (75)                Load or Execute a Program (EXEC)
+ 4Ch (76)                Terminate a Process (EXIT)
+ 4Dh (77)                Get Return Code of a Subprocess (WAIT)
+ 4Eh (78)                Find First Matching File (FIND FIRST)
+ 4Fh (79)                Find Next Matching File (FIND NEXT)
+ 50h (80)                Reserved
+ 51h (81)                Reserved
+ 52h (82)                Reserved
+ 53h (83)                Reserved
+ 54h (84)                Get VERIFY Setting
+ 55h (85)                Reserved
+ 56h (86)                Rename a File
+ 57h (87)                Get or Set a File's Date and Time
+ 59h (89)                Get Extended Error Information             . DOS 3.0
+ 5Ah (90)                Create Unique File                         . DOS 3.0
+ 5Bh (91)                Create New File                            . DOS 3.0
+ 5Ch (92)                Lock/Unlock File Access                    . DOS 3.0
+ 5Dh (93)                Reserved
+ 5E00h (94-0)            Get Machine Name                           . DOS 3.1
+ 5E02h (94-2)            Set Printer Setup                          . DOS 3.1
+ 5E03h (94-3)            Get Printer Setup                          . DOS 3.1
+ 5F02h (95-2)            Get Redirection List Entry                 . DOS 3.1
+ 5F03h (95-3)            Redirect Device                            . DOS 3.1
+ 5F04h (95-4)            Cancel Redirection                         . DOS 3.1
+ 60h (96)                Reserved
+ 61h (97)                Reserved
+ 62h (98)                Get PSP Address                            . DOS 3.0
+
+Online resources provided by: http://www.ousob.com --- NG 2 HTML conversion by Dave Pearson
